@@ -27,6 +27,11 @@ header {
     text-shadow: 1.75px 3px #FAFAFA;
     margin: -20px;
  }
+.results {
+    font-size: 4em;
+    color: #212127;
+    margin: 20px;
+}
 
 
  

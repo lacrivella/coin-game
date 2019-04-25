@@ -10,10 +10,24 @@
 <body>
     <header>Coin Toss Game</header>
     <main>
-        <p>
-            <img src = "assets/pennytails.jpg">
+        <p class="results">
+            <span>Wins: 0</span> 
+            <span>Losses: 0</span>
         </p>
-        <p id = "message">
+        <p>
+            <img id="coin-image" src="assets/pennytails.jpg" alt="tails side of a wheat penny">
+        </p>
+        <p>
+            <label>
+                <input id="head-choice" type="radio" name="coin-side" checked>Heads
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="coin-side" checked>Tails
+            </label>
+        </p>
+        <p id="message">
             PLACE A BET
         </p>
         <button id="flip-it">FLIP IT!</button>
