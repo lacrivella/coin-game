@@ -5,5 +5,6 @@ const flipButton = document.getElementById('flip-it');
 
 //add event listeners
 flipButton.addEventListener('click', () => {
-    console.log('click click'); 
+    const randomNum = Math.random();
+    console.log(randomNum);
 });
