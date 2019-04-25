@@ -16,8 +16,8 @@ test('get test for tails when less than .5', function(assert) {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = 
+    const result = flipCoin(number);
 
     //Assert
-    assert.equal(true, false);
+    assert.equal(result, expected);
 });
