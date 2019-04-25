@@ -2,22 +2,30 @@
 
 header {
     font-family: 'Limelight', cursive;  
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
     background-color: #64888A;
+    color: #B4AC7D;
+    text-shadow: 2px 4px #212127;
 }
  body {
     font-family: 'Six Caps', sans-serif;
-    font-size: 2em;
     text-align: center;
  }
 #message {
     background-color: #64888A;
+    color: #212127;
+    font-size: 3em;
 }
  button {
     font-family: 'Limelight', cursive;
+    font-size: 4em;
     height: 170px;
     width: 300px;
+    background-color: #212127;
+    color: #B4AC7D;
+    text-shadow: 1.75px 3px #FAFAFA;
+    margin: -20px;
  }
 
 
