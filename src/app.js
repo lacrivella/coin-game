@@ -12,7 +12,8 @@ const coinImage = document.getElementById('coin-image');
 flipButton.addEventListener('click', () => {
     const randomNum = Math.random();
     const flip = flipCoin(randomNum);
-    
+    const imageSource = './assets/' + flip + '.jpg';
+    coinImage.src = imageSource;
     let guess = '';
 
     if(headChoice.checked) {
