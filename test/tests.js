@@ -1,11 +1,22 @@
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
+//create function
+function flipCoin(number) {
+    if(number < .5) {
+        return 'tails';
+    }
+}
+
+
+test('get test for tails when less than .5', function(assert) {
     //Arrange
     // Set up your parameters and expectations
+    const number = .49;
+    const expected = 'tails';
 
     //Act 
     // Call the function you're testing and set the result to a const
+    const result = 
 
     //Assert
     assert.equal(true, false);
