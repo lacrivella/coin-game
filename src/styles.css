@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight|Six+Caps');
+
+header {
+    font-family: 'Limelight', cursive;  
+    font-size: 3em;
+    text-align: center;
+    background-color: #64888A;
+}
+ body {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 2em;
+    text-align: center;
+ }
+#message {
+    background-color: #64888A;
+}
+ button {
+    font-family: 'Limelight', cursive;
+    height: 170px;
+    width: 300px;
+ }
+
+
+ 
+ 
