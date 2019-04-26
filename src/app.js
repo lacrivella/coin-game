@@ -16,12 +16,6 @@ let wins = 0;
 let loss = 0;
 let money = 1000;
 
-//going to want to have money + betAmount if win and money - betAmount if loss.
-//going to need const?
-//in group we used parseInt. Look on MDN to remember why?
-//issue with NaN. Look on MDN and figure it out
-//const betValue = parseinput.Value 
-
 //add event listeners
 flipButton.addEventListener('click', () => {
     const randomNum = Math.random();
@@ -52,5 +46,4 @@ flipButton.addEventListener('click', () => {
         money -= betValue;
     }
     moneyAmount.textContent = 'Money: $' + money;
-    console.log(betAmount.value);
 });

@@ -28,17 +28,3 @@ test('get test for heads when greater than or equal to .5', function(assert) {
     //Assert
     assert.equal(result, expected);
 });
-
-test('see if betting works', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-    
-
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-    
-
-    //Assert
-    assert.equal(result, expected);
-}
