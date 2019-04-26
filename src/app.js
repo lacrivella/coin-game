@@ -20,12 +20,13 @@ let money = 1000;
 //going to need const?
 //in group we used parseInt. Look on MDN to remember why?
 //issue with NaN. Look on MDN and figure it out
-//const betValue = input.Value 
+//const betValue = parseinput.Value 
 
 //add event listeners
 flipButton.addEventListener('click', () => {
     const randomNum = Math.random();
     const flip = flipCoin(randomNum);
+    const betValue = parseInt(betAmount.value, 10);
 
     //trying to make image flip
     const imageSource = 'assets/' + flip + '.jpg';
@@ -42,10 +43,14 @@ flipButton.addEventListener('click', () => {
         message.textContent = 'Winner Winner!';
         wins++;
         winResults.textContent = 'Wins: ' + wins;
+        money += betValue;
     }
     else {
         message.textContent = 'Nope, nope, nope.';
         loss++;
         lossResult.textContent = 'Losses: ' + loss;
+        money -= betValue;
     }
+    moneyAmount.textContent = 'Money: $' + money;
+    console.log(betAmount.value);
 });
