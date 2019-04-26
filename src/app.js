@@ -29,12 +29,14 @@ flipButton.addEventListener('click', () => {
 
     const Correct = flip === guess;
 
-   if(flip === guess) {
+    if(flip === guess) {
        console.log('winner winner chicken dinner')
        wins++;
        winResults.textContent = 'Wins' + wins;
    }
    else {
        console.log('you lose. sucks to suck');
+       loss++;
+       lossResult.textContent= 'Loss' + loss;
    }
 });
