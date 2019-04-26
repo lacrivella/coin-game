@@ -8,10 +8,19 @@ const coinImage = document.getElementById('coin-image');
 const winResults = document.getElementById('wins');
 const lossResult = document.getElementById('loss');
 const message = document.getElementById('message');
+const moneyAmount = document.getElementById('money');
+const betAmount = document.getElementById('bet-amount');
 
 //initialize things?
 let wins = 0;
 let loss = 0;
+let money = 1000;
+
+//going to want to have money + betAmount if win and money - betAmount if loss.
+//going to need const?
+//in group we used parseInt. Look on MDN to remember why?
+//issue with NaN. Look on MDN and figure it out
+//const betValue = input.Value 
 
 //add event listeners
 flipButton.addEventListener('click', () => {
@@ -29,7 +38,6 @@ flipButton.addEventListener('click', () => {
     else {
         guess = 'tails';  
     }
-
     if(flip === guess) {
         message.textContent = 'Winner Winner!';
         wins++;
