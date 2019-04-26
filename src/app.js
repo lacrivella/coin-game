@@ -7,8 +7,11 @@ const headChoice = document.getElementById('head-choice');
 const coinImage = document.getElementById('coin-image');
 const winResults = document.getElementById('wins');
 const lossResult = document.getElementById('loss');
+const message = document.getElementById('message');
 
 //initialize things?
+let wins = 0;
+let loss = 0;
 
 //add event listeners
 flipButton.addEventListener('click', () => {
@@ -30,13 +33,15 @@ flipButton.addEventListener('click', () => {
     const Correct = flip === guess;
 
     if(flip === guess) {
-       console.log('winner winner chicken dinner')
-       wins++;
-       winResults.textContent = 'Wins' + wins;
-   }
-   else {
-       console.log('you lose. sucks to suck');
-       loss++;
-       lossResult.textContent= 'Loss' + loss;
-   }
+    //    console.log('winner winner chicken dinner')
+        message.textContent = 'Winner Winner!';
+        wins++;
+        winResults.textContent = 'Wins' + wins;
+    }
+    else {
+    //    console.log('you lose. sucks to suck');
+        message.textContent = 'Nope Nope';
+        loss++;
+        lossResult.textContent= 'Loss' + loss;
+    }
 });
