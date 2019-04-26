@@ -30,18 +30,14 @@ flipButton.addEventListener('click', () => {
         guess = 'tails';  
     }
 
-    const Correct = flip === guess;
-
     if(flip === guess) {
-    //    console.log('winner winner chicken dinner')
         message.textContent = 'Winner Winner!';
         wins++;
-        winResults.textContent = 'Wins' + wins;
+        winResults.textContent = 'Wins: ' + wins;
     }
     else {
-    //    console.log('you lose. sucks to suck');
-        message.textContent = 'Nope Nope';
+        message.textContent = 'Nope, nope, nope.';
         loss++;
-        lossResult.textContent= 'Loss' + loss;
+        lossResult.textContent = 'Losses: ' + loss;
     }
 });

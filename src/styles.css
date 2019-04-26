@@ -7,15 +7,24 @@ h1 {
     background-color: #64888A;
     color: #B4AC7D;
     text-shadow: 2px 4px #212127;
+    margin-top: 15px; 
+    margin-bottom: 10px;
 }
  body {
     font-family: 'Six Caps', sans-serif;
     text-align: center;
  }
+ #coin-image {
+     margin-top: -50px; 
+ }
 #message {
     background-color: #64888A;
     color: #212127;
     font-size: 3em;
+    margin-top: -10px;
+}
+label {
+    font-size: 2em;
 }
  button {
     font-family: 'Limelight', cursive;
@@ -28,9 +37,9 @@ h1 {
     margin: -20px;
  }
 .results {
-    font-size: 4em;
+    font-size: 3.5em;
     color: #212127;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 
