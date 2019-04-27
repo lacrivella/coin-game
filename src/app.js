@@ -28,7 +28,7 @@ flipButton.addEventListener('click', () => {
 
     let guess = '';
     if(headChoice.checked) {
-        guess = 'head';
+        guess = 'heads';
     }
     else {
         guess = 'tails';  
